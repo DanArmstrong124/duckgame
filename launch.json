@@ -5,7 +5,7 @@
     "configurations": [
       {
         "name": "Launch Program",
-        "program": "$duckgame/script.js",
+        "program": "$DUCKGAME/script.js",
         "request": "launch",
         "skipFiles": [
           "<node_internals>/**"
