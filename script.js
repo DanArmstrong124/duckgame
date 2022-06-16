@@ -9,7 +9,6 @@ let tiktokChatConnection = new WebcastPushConnection(tiktokUsername);
 // Connect to the chat (await can be used as well)
 tiktokChatConnection.connect().then(state => {
     console.info(`Connected to roomId ${state.roomId}`);
-    document.title = "hi";
 }).catch(err => {
     console.error('Failed to connect', err);
 })
