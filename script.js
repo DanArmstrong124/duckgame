@@ -1,7 +1,7 @@
 const { WebcastPushConnection } = require('tiktok-live-connector');
 
 // Username of someone who is currently live
-let tiktokUsername = "officialgeilegisela";
+let tiktokUsername = "danarms_x";
 
 // Create a new wrapper object and pass the username
 let tiktokChatConnection = new WebcastPushConnection(tiktokUsername);
@@ -9,6 +9,7 @@ let tiktokChatConnection = new WebcastPushConnection(tiktokUsername);
 // Connect to the chat (await can be used as well)
 tiktokChatConnection.connect().then(state => {
     console.info(`Connected to roomId ${state.roomId}`);
+    document.title = "hi";
 }).catch(err => {
     console.error('Failed to connect', err);
 })
